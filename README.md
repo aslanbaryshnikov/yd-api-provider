@@ -3,16 +3,22 @@
 ## Table of Contents <!-- omit in toc -->
 
 - [1. Setup](#1-setup)
-	- [1.1. Install and activate WP plugin](#11-install-and-activate-wp-plugin)
+	- [1.1. Install plugin](#11-install-plugin)
 	- [1.2. Create an application on Yandex](#12-create-an-application-on-yandex)
 	- [1.3. Getting a token](#13-getting-a-token)
 - [2. How to use](#2-how-to-use)
 
 ## 1. Setup
 
-### 1.1. Install and activate WP plugin
+### 1.1. Install plugin
 
-Download the plugin from GitHub and move it to the **/wp-content/plugins/** directory. The plugin path should look like **/wp-content/plugins/yd-api-provider**. Then activate the plugin in the admin panel on your site.
+```bash
+$ cd /var/www/my-domain.com/wp-content/plugins
+$ git clone https://github.com/aslanbaryshnikov/yd-api-provider
+$ php composer.phar install --no-dev --optimize-autoloader
+```
+
+After the plugin is installed, don't forget to activate it on your site.
 
 ### 1.2. Create an application on Yandex
 
