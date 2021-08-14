@@ -15,7 +15,7 @@
 ```bash
 $ cd /var/www/my-domain.com/wp-content/plugins
 $ git clone https://github.com/aslanbaryshnikov/yd-api-provider
-$ php composer.phar install --no-dev --optimize-autoloader
+$ php yd-api-provider/composer.phar install --no-dev --optimize-autoloader
 ```
 
 After the plugin is installed, don't forget to activate it on your site.
@@ -49,7 +49,7 @@ If you still have questions, you can learn the [instructions](https://yandex.ru/
 
 ## 2. How to use
 
-The plugin uses [PHP SDK for Yandex.Disk](https://github.com/jack-theripper/yandex) and provides a global **YD_API_Provider** object, through which you can perform any operations with Disk. You can check the available methods [here](https://github.com/jack-theripper/yandex).
+The plugin uses [PHP SDK for Yandex.Disk](https://github.com/jack-theripper/yandex) and provides a global **YD_API_Provider** class, through which you can perform any operations with Disk. You can check the available methods [here](https://github.com/jack-theripper/yandex).
 
 ```php
 add_action('plugins_loaded', 'my_func');
