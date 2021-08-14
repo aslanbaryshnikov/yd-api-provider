@@ -54,7 +54,7 @@ The plugin uses [PHP SDK for Yandex.Disk](https://github.com/jack-theripper/yand
 ```php
 add_action('plugins_loaded', 'my_func');
 
-public function my_func() {
+function my_func() {
 	$YandexDisk = YD_API_Provider::get_instance();
 
 	echo $YandexDisk->total_space;
