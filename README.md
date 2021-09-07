@@ -1,5 +1,7 @@
 # Yandex.Disk API Provider <!-- omit in toc -->
 
+This is a WordPress plugin that allows you to perform any operations with your Yandex.Disk.
+
 ## Table of Contents <!-- omit in toc -->
 
 - [1. Setup](#1-setup)
